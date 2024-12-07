@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaurya Deep - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Slogografientnobg.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="brand">Shaurya Deep</h1>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container hero">
+            <h1 class="hero-title">Hi, I'm <span id="typewriter"></span></h1>
+            <p class="hero-subtitle">A passionate tech enthusiast and aspiring entrepreneur.</p>
+        </div>
+    </header>    
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate and driven 11th grader with a deep interest in technology, programming, and business. 
+                I specialize in advanced Python programming, web development, Android development, and IoT. 
+                My goal is to create innovative solutions and eventually establish my own brand as its CEO.
+            </p>
+            <p>
+                I have honed my skills through various projects and certifications, constantly pushing my limits to learn and grow.
+                With expertise in C programming and hands-on experience in building IoT systems, I aspire to bridge technology and entrepreneurship to create impactful products.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skill">
+                <span>Advanced Python</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Web Development</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Android Development</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>IoT Development</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>C Language</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-box">
+                <form id="contact-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="signature-container">
+            <img src="signature.png" alt="Signature" class="signature-img">
+        </div>
+        <div class="links-container">
+            <a href="https://www.linkedin.com/in/shaurya-deep-28b16a340/" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://www.instagram.com/amiableshaurya/" target="_blank" class="social-link">Instagram</a>
+            <a href="https://github.com/MisterioShaurya/" target="_blank" class="social-link">GitHub</a>
+            <a href="#" target="_blank" class="social-link tfv">Thanks for visiting!</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

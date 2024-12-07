@@ -1,0 +1,257 @@
+/* General Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.hero-title {
+    font-size: 3rem;
+    padding-top: 50px;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 10px auto 0;
+}
+
+
+/* Section Styling */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills .skill {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.skill span {
+    font-weight: bold;
+    display: block;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    border-radius: 5px;
+}
+
+/* Contact Section Styling */
+.contact-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ensure it doesn't stretch too wide */
+    margin: 0 auto; /* Center the contact form */
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-form input, 
+#contact-form textarea, 
+#contact-form button {
+    width: 100%;
+    padding: 10px 15px; /* Add consistent padding */
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+#contact-form button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact-form button:hover {
+    background: #00f2fe;
+    transform: scale(1.05);
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center all links */
+    align-items: center;
+    background: linear-gradient(135deg, #333, #4facfe);
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Remove hamburger menu completely */
+.menu-toggle {
+    display: none;
+}
+
+/* Make sure links remain visible on all screen sizes */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap; /* Wrap links on smaller screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b40);
+    color: #fff;
+    border-top: 2px solid #444;
+    flex-wrap: wrap;
+}
+
+.signature-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.signature-img {
+    max-height: 60px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease-in-out;
+}
+
+.signature-img:hover {
+    transform: scale(1.1);
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-end;
+    flex: 2;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    color: #f0a500;
+    transform: translateY(-5px);
+}
+
+  /* Responsive Footer */
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .links-container {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
